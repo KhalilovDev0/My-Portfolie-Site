@@ -16,7 +16,6 @@ function Contact() {
             variant="outlined"
             className="w-full px-4 py-3 rounded-lg bg-blue-800/50 text-white"
             sx={{
-              // Border stilləri
               "& .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#2563eb !important",
               },
@@ -42,7 +41,6 @@ function Contact() {
             variant="outlined"
             className="w-full px-4 py-3 rounded-lg bg-blue-800/50 text-white"
             sx={{
-              // Border stilləri
               "& .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#2563eb !important",
               },
@@ -68,7 +66,6 @@ function Contact() {
             variant="outlined"
             className="w-full px-4 py-3 rounded-lg bg-blue-800/50 text-white"
             sx={{
-              // Border stilləri
               "& .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#2563eb !important",
               },
@@ -94,7 +91,6 @@ function Contact() {
             multiline
             rows={7}
             sx={{
-              // Border stilləri
               "& .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#2563eb !important",
               },
