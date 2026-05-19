@@ -1,0 +1,14 @@
+
+
+-- plan --
+
+-- Componentler
+ - Header
+ - Main
+ - Footer
+
+-- Sehifeler
+ - Ana
+ - Skills
+ - Projects
+ - Contact Me
