@@ -2,7 +2,7 @@ import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="flex justify-between items-center py-8 px-8 bg-gradient-to-r from-blue-950 to-blue-900 text-white shadow-lg ">
+    <footer className="flex justify-between items-center py-8 px-8 bg-linear-to-r from-blue-950 to-blue-900 text-white shadow-lg ">
       <ul className="text-2xl flex gap-6 items-center">
         <a href="https://github.com/Appleex0" target="_blank"  className="cursor-pointer hover:text-blue-300 transition duration-300 transform hover:scale-110">
           <FaGithub />
