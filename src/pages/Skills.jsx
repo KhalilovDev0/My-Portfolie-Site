@@ -17,7 +17,7 @@ function Skills() {
   };
 
   return (
-    <div className="w-full h-full bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white flex justify-center items-center  transition-all">
+    <div className="w-full h-full bg-linear-to-br from-blue-900 via-blue-800 to-blue-950 text-white flex justify-center items-center  transition-all">
       <div className="flex flex-col gap-5 max-w-5xl px-6 w-full justify-center items-center">
         <h1 className="text-5xl font-bold  text-center">My Skills</h1>
         <div className=" flex flex-col gap-10 w-3/7">
