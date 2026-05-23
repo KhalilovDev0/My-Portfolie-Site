@@ -7,9 +7,9 @@ function Home() {
   const isMobile = window.innerWidth < 640;
   return (
     <div className="w-full min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-slate-950 text-white flex justify-start items-center transition-all overflow-x-hidden">
-      <div className="flex flex-col w-full justify-between items-start gap-6 px-4 py-12 md:py-24 relative z-10 sm:px-6 lg:px-22 max-w-8xl mx-auto">
+      <div className="flex flex-col w-full justify-between items-start gap-6 px-4 py-16 md:py-20 relative z-10 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <motion.h1
-          className="flex flex-col flex-wrap items-start gap-x-2 text-4xl md:text-5xl md:flex-row lg:text-7xl font-bold mb-4"
+          className="flex flex-col flex-wrap items-start gap-x-2 text-3xl md:text-4xl md:flex-row lg:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -21,7 +21,7 @@ function Home() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-200 leading-relaxed max-w-2xl"
+          className="text-base md:text-lg lg:text-lg text-gray-200 leading-relaxed max-w-2xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -30,9 +30,9 @@ function Home() {
           Gəlin birlikdə möhtəşəm bir iş ortaya qoyaq!
         </motion.p>
 
-        <div className="flex flex-col gap-4 mt-10 w-full sm:w-auto sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-3 mt-8 w-full sm:w-auto sm:flex-row sm:items-center">
           <motion.button
-            className="w-full sm:w-auto px-6 py-4 lg:px-8 lg:py-5 text-base md:text-lg lg:text-xl bg-linear-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 rounded-lg font-semibold transition duration-300 shadow-lg cursor-pointer text-center"
+            className="w-full sm:w-auto px-5 py-3 lg:px-6 lg:py-3 text-sm md:text-base lg:text-base bg-linear-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 rounded-lg font-semibold transition duration-300 shadow-lg cursor-pointer text-center"
             initial={{ opacity: 0, y: isMobile ? 0 : 45 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.35 }}
@@ -43,7 +43,7 @@ function Home() {
           </motion.button>
 
           <motion.button
-            className="w-full sm:w-auto px-6 py-4 lg:px-8 lg:py-5 text-base md:text-lg lg:text-xl border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-blue-900 rounded-lg font-semibold transition duration-300 cursor-pointer text-center"
+            className="w-full sm:w-auto px-5 py-3 lg:px-6 lg:py-3 text-sm md:text-base lg:text-base border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-blue-900 rounded-lg font-semibold transition duration-300 cursor-pointer text-center"
             initial={{ opacity: 0, y: isMobile ? 0 : 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}

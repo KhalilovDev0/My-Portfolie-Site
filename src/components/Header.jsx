@@ -45,10 +45,10 @@ function Header() {
       </Drawer>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
         <div className="flex items-center gap-3 cursor-pointer group">
-          <div className="text-3xl md:text-4xl lg:text-5xl text-cyan-400 group-hover:text-blue-500 transition-colors duration-300 transform group-hover:scale-110">
+          <div className="text-2xl md:text-2xl lg:text-3xl text-cyan-400 group-hover:text-blue-500 transition-colors duration-300 transform group-hover:scale-110">
             <FaCode />
           </div>
-          <div className="text-xl md:text-2xl lg:text-4xl font-extrabold tracking-tight bg-linear-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-500 transition-all duration-500">
+          <div className="text-lg md:text-xl lg:text-2xl font-extrabold tracking-tight bg-linear-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-500 transition-all duration-500">
             Khalilov{" "}
             <span className="text-cyan-400 group-hover:text-white transition-colors duration-500">
               Dev
@@ -66,7 +66,7 @@ function Header() {
                 <NavLink
                   to={item.path}
                   className={({ isActive }) =>
-                    `text-xl font-semibold tracking-wide transition-all duration-300 relative py-1.5 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-linear-to-r after:from-cyan-400 after:to-blue-500 after:transition-all after:duration-300 ${
+                    `text-sm font-semibold tracking-wide transition-all duration-300 relative py-1.5 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-linear-to-r after:from-cyan-400 after:to-blue-500 after:transition-all after:duration-300 ${
                       isActive
                         ? "text-cyan-400 after:w-full"
                         : "text-slate-300 hover:text-white after:w-0 hover:after:w-full"

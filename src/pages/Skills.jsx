@@ -58,24 +58,24 @@ function Skills() {
         animate="visible"
         className="flex flex-col gap-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full items-center"
       >
-        
+
         <motion.div variants={itemVariants} className="text-center gap-2 flex flex-col">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Bacarıqlar & Texnologiyalar
           </h1>
-          <p className="text-slate-400 text-sm md:text-lg lg:text-xl">
+          <p className="text-slate-400 text-xs md:text-sm lg:text-base">
             Mütəmadi olaraq istifadə etdiyim və layihələrimdə tətbiq etdiyim alətlər
           </p>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="flex gap-3 justify-center flex-wrap p-1.5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md">
+        <motion.div variants={itemVariants} className="flex gap-2 justify-center flex-wrap p-1.5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md">
           {categories.map((cat) => {
             const isActive = selectedCategory === cat.id;
             return (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-4 py-2 rounded-xl text-sm md:text-base lg:text-lg font-medium transition-all duration-300 cursor-pointer relative z-10 ${
+                className={`px-3 py-2 rounded-xl text-xs md:text-sm lg:text-base font-medium transition-all duration-300 cursor-pointer relative z-10 ${
                   isActive ? "text-white" : "text-slate-400 hover:text-white "
                 }`}
               >
@@ -113,9 +113,9 @@ function Skills() {
                 className="group flex flex-col items-center justify-center p-5 bg-white/3 border border-white/5 hover:border-cyan-500/40 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/5 cursor-pointer"
               >
                 <i
-                  className={`devicon-${skill.icon} text-4xl md:text-5xl lg:text-6xl text-slate-400 group-hover:text-cyan-400 transition-colors duration-300`}
+                  className={`devicon-${skill.icon} text-3xl md:text-4xl lg:text-5xl text-slate-400 group-hover:text-cyan-400 transition-colors duration-300`}
                 ></i>
-                <span className="mt-3 text-xs md:text-sm lg:text-lg font-medium text-slate-400 group-hover:text-white transition-colors duration-300 text-center">
+                <span className="mt-3 text-xs md:text-xs lg:text-sm font-medium text-slate-400 group-hover:text-white transition-colors duration-300 text-center">
                   {skill.name}
                 </span>
               </motion.div>

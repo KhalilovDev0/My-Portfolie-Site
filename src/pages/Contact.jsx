@@ -13,7 +13,7 @@ const textFiledStyles = {
     backgroundColor: "rgba(255, 255, 255, 0.02)",
     backdropFilter: "blur(12px)",
     transition: "all 0.3s ease",
-    fontSize: { xs: "1rem", md: "1.25rem" },
+    fontSize: { xs: "0.9rem", md: "1rem" },
     "& :hover": {
       backgroundColor: "rgba(255, 255, 255, 0.04)",
     },
@@ -34,7 +34,7 @@ const textFiledStyles = {
   },
   "& .MuiInputLabel-root": {
     color: "#94a3b8 !important",
-    fontSize: { xs: "0.85rem", md: "1.24rem" },
+    fontSize: { xs: "0.8rem", md: "0.9rem" },
   },
   "& .MuiInputLabel-root.Mui-focused": {
     color: "#22d3ee !important",
@@ -62,7 +62,7 @@ const textFiledStyles = {
     transform: "translateY(0)",
   },
   "& .MuiOutlinedInput-input": {
-    fontSize: { xs: "1rem", md: "1.25rem" },
+    fontSize: { xs: "0.9rem", md: "1rem" },
     lineHeight: "1.6",
   },
 };
@@ -134,13 +134,13 @@ function Contact() {
   });
 
   return (
-    <div className="w-full min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-slate-950 text-white pt-20 sm:pt-32 pb-16 flex items-start justify-center relative overflow-hidden">
+    <div className="w-full min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-slate-950 text-white pt-16 sm:pt-24 pb-16 flex items-start justify-center relative overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-72 h-72 bg-blue-600/5 rounded-full blur-[130px] pointer-events-none z-0"></div>
 
       <div className="max-w-3xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-10 flex flex-col gap-3">
+        <div className="text-center mb-8 flex flex-col gap-3">
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent inline-block"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent inline-block"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -153,7 +153,7 @@ function Contact() {
           </motion.h1>
 
           <motion.p
-            className="text-slate-400 text-xs sm:text-sm md:text-base lg:text-xl max-w-xl mx-auto px-2"
+            className="text-slate-400 text-xs sm:text-xs md:text-sm lg:text-base max-w-xl mx-auto px-2"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
@@ -164,13 +164,13 @@ function Contact() {
         </div>
 
         <motion.div
-          className="bg-white/2 border border-white/10 p-5 sm:p-8 rounded-3xl backdrop-blur-xl shadow-2xl mx-2 sm:mx-0"
+          className="bg-white/2 border border-white/10 p-5 sm:p-6 rounded-3xl backdrop-blur-xl shadow-2xl mx-2 sm:mx-0"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <form
-            className="flex flex-col gap-6 sm:gap-8"
+            className="flex flex-col gap-5 sm:gap-6"
             onSubmit={handleSubmit}
             onChange={handleChange}
           >
@@ -251,7 +251,7 @@ function Contact() {
                 padding: { xs: "10px 0", md: "12px 0" },
                 borderRadius: "12px",
                 fontWeight: "bold",
-                fontSize: { xs: "1.05rem", md: "1.25rem" },
+                fontSize: { xs: "0.95rem", md: "1rem" },
                 textTransform: "none",
                 transition: "all 0.3s ease",
                 cursor: isSubmitting ? "not-allowed" : "pointer",

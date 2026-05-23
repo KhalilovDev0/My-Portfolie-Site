@@ -66,22 +66,22 @@ function Projects() {
 
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         
-        <motion.div 
-          className="text-center mb-16 flex flex-col gap-2"
+        <motion.div
+          className="text-center mb-12 flex flex-col gap-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             My Projects
           </h1>
-          <p className="text-slate-400 text-sm md:text-xl lg:text-2xl">
+          <p className="text-slate-400 text-sm md:text-base lg:text-lg">
             İnkişaf etdirdiyim real layihələr və üzərində işlədiyim ideyalar
           </p>
         </motion.div>
 
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:mx-12 lg:gap-8"
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -104,11 +104,11 @@ function Projects() {
                 )}
 
                 <div>
-                  <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold mb-3 transition-colors duration-300 ${project.isActive ? "group-hover:text-cyan-400 text-white" : "text-slate-500"}`}>
+                  <h2 className={`text-lg md:text-xl lg:text-2xl font-bold mb-3 transition-colors duration-300 ${project.isActive ? "group-hover:text-cyan-400 text-white" : "text-slate-500"}`}>
                     {project.title}
                   </h2>
 
-                  <p className="text-slate-400  leading-relaxed mb-6 text-base md:text-lg lg:text-xl">
+                  <p className="text-slate-400  leading-relaxed mb-6 text-sm md:text-base lg:text-base">
                     {project.description}
                   </p>
                 </div>
@@ -118,7 +118,7 @@ function Projects() {
                     {project.tags.map((tag, tIndex) => (
                       <span
                         key={tIndex}
-                        className={` font-medium px-2.5 py-0.5 rounded-md text-base md:text-lg ${
+                        className={` font-medium px-2.5 py-0.5 rounded-md text-xs md:text-sm ${
                           project.isActive
                             ? "bg-cyan-500/10 text-cyan-400 border border-cyan-500/10"
                             : "bg-slate-500/10 text-slate-500 border border-slate-500/10"
@@ -142,9 +142,9 @@ function Projects() {
                     }`}
                     disabled={!project.isActive}
                   >
-                    <span className="text-base md:text-lg lg:text-xl">{project.isActive ? "View Code" : "In Progress"}</span>
+                    <span className="text-sm md:text-base lg:text-base">{project.isActive ? "View Code" : "In Progress"}</span>
                     {project.isActive && (
-                      <i className="devicon-github-original text-base md:text-lg lg:text-3xl"></i>
+                      <i className="devicon-github-original text-sm md:text-base lg:text-lg"></i>
                     )}
                   </button>
                 </div>
