@@ -15,11 +15,12 @@ function Skills() {
     Framework: [
       { id: "react", name: "React", icon: "react-original" },
       { id: "tail", name: "Tailwind CSS", icon: "tailwindcss-original" },
-      { id: "node", name: "Node.js", icon: "nodejs-plain" },
+      { id: "material", name: "Material UI", icon: "materialui-plain" },
+      { id: "framer", name: "Framer Motion", icon: "framermotion-plain" },
     ],
     Other: [
       { id: "git", name: "Git", icon: "git-plain" },
-      { id: "dock", name: "Docker", icon: "docker-plain" },
+      { id: "dock", name: "Unity", icon: "unity-plain" },
       { id: "aws", name: "Linux", icon: "linux-plain" },
     ],
   };

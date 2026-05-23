@@ -51,7 +51,7 @@ function Footer() {
       </ul>
 
       <div className="text-xs md:text-lg text-slate-400 text-center sm:text-right font-medium tracking-wide">
-        © {currentYear} <span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer font-semibold">Protovera Interactive</span>. All rights reserved.
+        © {currentYear} <span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer font-semibold">Khalilov Dev</span>. All rights reserved.
       </div>
       
       </div>
