@@ -50,13 +50,6 @@ function Projects() {
       tags: ["React", "ASP.NET", "SQL Server"],
       isActive: false,
     },
-    {
-      title: "Game Wiki",
-      description: "Oyunlar haqqında ətraflı məlumat mərkəzi və fərdiləşdirilmiş wiki platforması.",
-      link: "#",
-      tags: ["React", "Node.js", "MongoDB"],
-      isActive: false,
-    },
   ];
 
   return (
