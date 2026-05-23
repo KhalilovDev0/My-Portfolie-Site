@@ -3,7 +3,7 @@ import Typewriter from "../components/Typewriter";
 import { motion } from "framer-motion";
 
 function Home() {
-  const myTitles = ["Xəlilov Ağa", "Frontend Tərtibatçı"];
+  const myTitles = ["Frontend Tərtibatçı", "Veb İnkişafçı", "Yaradıcı Proqramçı"];
   const isMobile = window.innerWidth < 640;
   return (
     <div className="w-full min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-slate-950 text-white flex justify-start items-center transition-all overflow-x-hidden">
